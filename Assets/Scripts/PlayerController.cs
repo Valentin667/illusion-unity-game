@@ -4,8 +4,8 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     private const float GRAVITY_VALUE = -19.81f;    
-
-    [SerializeField] private float m_Speed = 5.0f;  
+    
+    [SerializeField] private float m_BaseSpeed = 5.0f;
     [SerializeField] private float m_JumpHeight = 1.0f; 
     [SerializeField] private float m_TurnSmoothTime = 0.1f; 
 
@@ -14,12 +14,14 @@ public class PlayerController : MonoBehaviour
     private float m_TurnSmoothVelocity; 
 
     private Vector2 m_MoveVector;   
+    private float m_CurrentSpeed;
 
     #region Initialization  
     private void OnEnable()
     {
         m_Character = gameObject.AddComponent<CharacterController>();   
         m_Character.radius = 0.4f;  
+        m_CurrentSpeed = m_BaseSpeed;
     }
 
     private void OnDisable()
@@ -63,7 +65,7 @@ public class PlayerController : MonoBehaviour
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;  
 
             // Apply movement
-            m_Character.Move(moveDir.normalized * m_Speed * Time.deltaTime);    
+            m_Character.Move(moveDir.normalized * m_CurrentSpeed * Time.deltaTime);    
         }
     }
 
@@ -95,5 +97,14 @@ public class PlayerController : MonoBehaviour
         m_JumpVelocity += Mathf.Sqrt(m_JumpHeight * -GRAVITY_VALUE);
         
         m_Character.Move(Vector3.up * m_JumpHeight * Time.deltaTime);    
+    }
+
+    public void AdjustSpeed(float speedModifier)
+    {
+        // Modifier la vitesse actuelle
+        m_CurrentSpeed += speedModifier;
+
+        // Assurez-vous que la vitesse ne devient pas négative
+        m_CurrentSpeed = Mathf.Max(0f, m_CurrentSpeed);
     }
 }
