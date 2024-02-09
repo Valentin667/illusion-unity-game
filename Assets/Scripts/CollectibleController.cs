@@ -8,6 +8,21 @@ public class CollectibleController_Final : MonoBehaviour
     public float rotationSpeedX = 50.0f; // Vitesse de rotation autour de l'axe X
     public float rotationSpeedY = 50.0f; // Vitesse de rotation autour de l'axe Y
 
+    // public AudioClip collectSound; // Le clip audio à jouer
+
+    // private AudioSource collectibleAudio;
+
+    // Audio
+    [SerializeField] private AudioSource collectionSound;
+
+    // private void Start()
+    // {
+    //     // Attribuez le composant AudioSource
+    //     collectibleAudio = GetComponent<AudioSource>();
+    //     // Attribuez le clip audio au composant AudioSource
+    //     collectibleAudio.clip = collectSound;
+    // }
+
     private void Update()
     {
         // Faire tourner les objets autour des axes X et Y
@@ -18,9 +33,12 @@ public class CollectibleController_Final : MonoBehaviour
     {
         if (other.gameObject.tag == PLAYER_TAG)
         {
-            ScoreManager.Instance.AddScore();
-
             other.gameObject.GetComponent<PlayerController>().AdjustSpeed(speedIncreaseAmount);
+
+            collectionSound.Play();
+            
+            // Jouez le son
+            // collectibleAudio.Play();
 
             gameObject.SetActive(false);
         }
