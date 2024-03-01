@@ -11,21 +11,21 @@ public class Respawn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Assuming the CharacterController is on the same GameObject as this script
+        // Get the CharacterController component attached to this GameObject
         m_Character = GetComponent<CharacterController>();
         if (m_Character == null)
         {
-            // Log a warning if the CharacterController component is not found
             Debug.LogWarning("CharacterController component not found on the GameObject.");
         }
     }
 
-    // FixedUpdate is called once per frame
-    void FixedUpdate()
+    // Called once per frame
+    void Update()
     {
+        // Check if the CharacterController is not null and if the object's position is below the threshold
         if (m_Character != null && transform.position.y < threshold)
         {
-            m_Character.Move(new Vector3(3f, 1f, -2.26f) - transform.position);
+            m_Character.Move(new Vector3(0.32f, 1f, -2.49f) - transform.position);
 
             Debug.Log("Respawn!");
         }   
