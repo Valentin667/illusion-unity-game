@@ -6,15 +6,16 @@ public class PlayerController : MonoBehaviour
     private const float GRAVITY_VALUE = -19.81f;    
     
     [SerializeField] private float m_BaseSpeed = 5.0f;
-    [SerializeField] private float m_JumpHeight = 1.0f; 
-    [SerializeField] private float m_TurnSmoothTime = 0.1f; 
+    [SerializeField] private float m_BaseJump = 1.0f; 
+    [SerializeField] private float m_TurnSmoothTime = 0.1f;
 
     private CharacterController m_Character;    
-    private float m_JumpVelocity;   
+    private float m_JumpVelocity;
     private float m_TurnSmoothVelocity; 
 
     private Vector2 m_MoveVector;   
     private float m_CurrentSpeed;
+    private float m_CurrentJump;
 
     #region Initialization  
     private void OnEnable()
@@ -22,6 +23,7 @@ public class PlayerController : MonoBehaviour
         m_Character = gameObject.AddComponent<CharacterController>();   
         m_Character.radius = 0.4f;  
         m_CurrentSpeed = m_BaseSpeed;
+        m_CurrentJump = m_BaseJump;
     }
 
     private void OnDisable()
@@ -94,17 +96,24 @@ public class PlayerController : MonoBehaviour
         }
 
         // Apply jump to the current velocity
-        m_JumpVelocity += Mathf.Sqrt(m_JumpHeight * -GRAVITY_VALUE);
-        
-        m_Character.Move(Vector3.up * m_JumpHeight * Time.deltaTime);    
+        m_JumpVelocity += Mathf.Sqrt(m_BaseJump * -GRAVITY_VALUE); 
     }
 
     public void AdjustSpeed(float speedModifier)
     {
-        // Modifier la vitesse actuelle
+        // Modifie la vitesse actuelle
         m_CurrentSpeed += speedModifier;
 
-        // Assurez-vous que la vitesse ne devient pas négative
+        // Permet de s'assurer que la vitesse ne devient pas négative
         m_CurrentSpeed = Mathf.Max(0f, m_CurrentSpeed);
+    }
+
+      public void AdjustJump(float jumpModifier)
+    {
+        // Modifier la vitesse actuelle
+        m_CurrentJump += jumpModifier;
+
+        // Assurez-vous que la vitesse ne devient pas négative
+        m_CurrentJump = Mathf.Max(0f, m_CurrentJump);
     }
 }

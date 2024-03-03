@@ -2,7 +2,6 @@ using System;
 
 public class ScoreManager
 {
-    #region Singleton
     private static ScoreManager m_Instance;
 
     public static ScoreManager Instance
@@ -17,13 +16,13 @@ public class ScoreManager
             return m_Instance;
         }
     }
-    #endregion
-
-    public static readonly int MAXMIMUM_SCORE = 4;
 
     public event Action OnAddScore;
 
     public int Score { get; private set; }
+
+    private static int totalScore = 1;
+
     public void AddScore()
     {
         Score++;
@@ -31,5 +30,25 @@ public class ScoreManager
         {
             OnAddScore();
         }
+    }
+
+    public void ResetScore()
+    {
+        Score = 0;
+    }
+
+    public static int GetTotalScore()
+    {
+        return totalScore;
+    }
+
+    public static void IncrementTotalScore()
+    {
+        totalScore++;
+    }
+
+    public static void ResetTotalScore()
+    {
+        totalScore = 0;
     }
 }

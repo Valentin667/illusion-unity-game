@@ -16,6 +16,6 @@ public class ScoreDisplay : MonoBehaviour
 
     private void UpdateScore()
     {
-        ScoreText.text = "Score " + ScoreManager.Instance.Score;
+        ScoreText.text = "Score: " + ScoreManager.Instance.Score + " / " + ScoreManager.GetTotalScore();
     }
 }
