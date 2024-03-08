@@ -12,11 +12,9 @@ public class MainMenuUI : MonoBehaviour
     private void Awake() {
         playButton.onClick.AddListener(() => {
             SceneManager.LoadScene(1);
-            Debug.Log("Loading the application...");
         });
         quitButton.onClick.AddListener(() => {
             Application.Quit();
-            Debug.Log("Quitting the application...");
         });
     }
 }

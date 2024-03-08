@@ -14,7 +14,7 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
-        LoadLevel(currentLevelIndex);
+        LoadLevel(0);
     }
 
     private void Update()
