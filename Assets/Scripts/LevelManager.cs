@@ -38,9 +38,27 @@ public class LevelManager : MonoBehaviour
 
         ScoreManager.IncrementTotalScore();
 
+        Quaternion rotation = Quaternion.Euler(0f, 180f, 0f);
+
         // Instancier le nouveau niveau
-        currentLevelInstance = Instantiate(levelPrefabs[levelIndex], Vector3.zero, Quaternion.identity);
+        currentLevelInstance = Instantiate(levelPrefabs[levelIndex], Vector3.zero, rotation);
+
+        TeleportPlayerToInitialPosition();
     }
+
+    private void TeleportPlayerToInitialPosition()
+{
+    GameObject player = GameObject.FindWithTag("Player");
+
+    if (player != null)
+    {
+        player.transform.position = new Vector3(0.32f, 1f, -2.49f);
+    }
+    else
+    {
+        Debug.LogWarning("Player not found. Make sure your player GameObject is tagged with 'Player'.");
+    }
+}
 
     public void LoadNextLevel()
     {
