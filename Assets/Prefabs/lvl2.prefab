@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 5010853335275532630}
   - component: {fileID: 4976800547055046349}
   - component: {fileID: 2392905359266360462}
-  - component: {fileID: 5495488615428608868}
   - component: {fileID: 1015761653542076358}
+  - component: {fileID: 3750327217949545460}
   m_Layer: 6
   m_Name: Goal Point 1
   m_TagString: Untagged
@@ -85,8 +85,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5495488615428608868
-MeshCollider:
+--- !u!114 &1015761653542076358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45443723116920104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e9312832125746b08a442523d995bd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggeredMaterial: {fileID: 2100000, guid: a3bc09ff79e294fd5bb22df8e30c0937, type: 2}
+  levelManager: {fileID: 0}
+--- !u!65 &3750327217949545460
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -103,24 +117,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1015761653542076358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 45443723116920104}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e9312832125746b08a442523d995bd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggeredMaterial: {fileID: 2100000, guid: a3bc09ff79e294fd5bb22df8e30c0937, type: 2}
-  levelManager: {fileID: 0}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!1 &627182649491788790
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,8 +581,8 @@ GameObject:
   - component: {fileID: 1207701378072853328}
   - component: {fileID: 3912802354027893561}
   - component: {fileID: 1158451132787465923}
-  - component: {fileID: 4425286561666016993}
   - component: {fileID: 891282903066602077}
+  - component: {fileID: 5284425784055557713}
   m_Layer: 6
   m_Name: Goal Point 2
   m_TagString: Untagged
@@ -656,8 +655,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4425286561666016993
-MeshCollider:
+--- !u!114 &891282903066602077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4965250641908678316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e9312832125746b08a442523d995bd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggeredMaterial: {fileID: 2100000, guid: a3bc09ff79e294fd5bb22df8e30c0937, type: 2}
+  levelManager: {fileID: 0}
+--- !u!65 &5284425784055557713
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -674,24 +687,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &891282903066602077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4965250641908678316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e9312832125746b08a442523d995bd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggeredMaterial: {fileID: 2100000, guid: a3bc09ff79e294fd5bb22df8e30c0937, type: 2}
-  levelManager: {fileID: 0}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!1 &7064856776893220157
 GameObject:
   m_ObjectHideFlags: 0

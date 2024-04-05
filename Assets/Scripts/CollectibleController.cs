@@ -13,7 +13,7 @@ public class CollectibleController_Final : MonoBehaviour
     // private AudioSource collectibleAudio;
 
     // Audio
-    [SerializeField] private AudioSource collectionSound;
+    // [SerializeField] public AudioSource collectionSound;
 
     // private void Start()
     // {
@@ -35,12 +35,14 @@ public class CollectibleController_Final : MonoBehaviour
         {
             other.gameObject.GetComponent<PlayerController>().AdjustSpeed(speedIncreaseAmount);
 
-            collectionSound.Play();
+            // collectionSound.Play();
             
             // Jouez le son
             // collectibleAudio.Play();
 
             gameObject.SetActive(false);
+
+            Destroy(gameObject);
         }
     }
 }

@@ -374,6 +374,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6052355488525043675}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 43b1f8c7-f8ee-4eae-b5ad-b1ba72c9accf
+    m_ActionName: Player/Respawn[/Keyboard/r]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -391,6 +407,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448b6c461df96143ad3721a1bf5b5eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Speed: 5
-  m_JumpHeight: 1
+  m_BaseSpeed: 5
+  m_BaseJump: 1
   m_TurnSmoothTime: 0.1

@@ -5,6 +5,8 @@ public class Respawn : MonoBehaviour
     public float threshold;
     private CharacterController m_Character;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,12 +26,6 @@ public class Respawn : MonoBehaviour
         {
             m_Character.Move(new Vector3(0.32f, 1f, -2.49f) - transform.position);
             Debug.Log("Respawn!");
-        }
-
-        // Detect when the "R" key is pressed
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            m_Character.Move(new Vector3(0.32f, 1f, -2.49f) - transform.position);
         }
     }
 }

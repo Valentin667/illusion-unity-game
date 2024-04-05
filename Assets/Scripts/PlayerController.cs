@@ -71,6 +71,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void Respawn()
+    {
+        m_Character.Move(new Vector3(0.32f, 1f, -2.49f) - transform.position);
+    }
+
     private void ApplyGravity() 
     {
         // Reset gravity value and return early if grounded

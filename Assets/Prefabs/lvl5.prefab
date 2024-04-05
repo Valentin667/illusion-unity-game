@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 413277185983526029}
   - component: {fileID: 7860691230591364642}
   - component: {fileID: 3440056662891837033}
-  - component: {fileID: 6730507917236807930}
   - component: {fileID: 4570768651651156261}
+  - component: {fileID: 3292814255873413129}
   m_Layer: 6
   m_Name: First Goal Point (1)
   m_TagString: Untagged
@@ -85,8 +85,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6730507917236807930
-MeshCollider:
+--- !u!114 &4570768651651156261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57064011266237618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e9312832125746b08a442523d995bd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggeredMaterial: {fileID: 2100000, guid: a3bc09ff79e294fd5bb22df8e30c0937, type: 2}
+  levelManager: {fileID: 0}
+--- !u!65 &3292814255873413129
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -103,24 +117,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &4570768651651156261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 57064011266237618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e9312832125746b08a442523d995bd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggeredMaterial: {fileID: 2100000, guid: a3bc09ff79e294fd5bb22df8e30c0937, type: 2}
-  levelManager: {fileID: 0}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!1 &122851178982842332
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,8 +131,8 @@ GameObject:
   - component: {fileID: 6689700045018209763}
   - component: {fileID: 8614274171414188517}
   - component: {fileID: 1800316330481762899}
-  - component: {fileID: 1643003965748366435}
   - component: {fileID: 2767717900559222656}
+  - component: {fileID: 7378691409936077142}
   m_Layer: 6
   m_Name: Death Point (21)
   m_TagString: Untagged
@@ -206,8 +205,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1643003965748366435
-MeshCollider:
+--- !u!114 &2767717900559222656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122851178982842332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+--- !u!65 &7378691409936077142
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -224,23 +236,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2767717900559222656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 122851178982842332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!1 &1116850755042754353
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,8 +250,8 @@ GameObject:
   - component: {fileID: 4473418002747024725}
   - component: {fileID: 1752551879573274154}
   - component: {fileID: 3479951940996937419}
-  - component: {fileID: 4922444134500972370}
   - component: {fileID: 5020742729805963129}
+  - component: {fileID: 4111579076207194221}
   m_Layer: 6
   m_Name: Death Point (16)
   m_TagString: Untagged
@@ -326,8 +324,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4922444134500972370
-MeshCollider:
+--- !u!114 &5020742729805963129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116850755042754353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+--- !u!65 &4111579076207194221
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -344,23 +355,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &5020742729805963129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1116850755042754353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: -0.0000076293945, y: 0.1, z: 0}
 --- !u!1 &1132997092293592804
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,8 +369,8 @@ GameObject:
   - component: {fileID: 184724466268253258}
   - component: {fileID: 2843963042794482109}
   - component: {fileID: 5234636833960825685}
-  - component: {fileID: 4741556246791285389}
   - component: {fileID: 4436069788618545828}
+  - component: {fileID: 4932160644101276563}
   m_Layer: 6
   m_Name: Death Point (25)
   m_TagString: Untagged
@@ -446,8 +443,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4741556246791285389
-MeshCollider:
+--- !u!114 &4436069788618545828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132997092293592804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+--- !u!65 &4932160644101276563
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -464,23 +474,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &4436069788618545828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1132997092293592804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: -0.000015258789, y: 0.1, z: 0}
 --- !u!1 &1150296005689287241
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,8 +488,8 @@ GameObject:
   - component: {fileID: 524900566173576922}
   - component: {fileID: 1693838570996267751}
   - component: {fileID: 8794726740440174458}
-  - component: {fileID: 2756917401886592680}
   - component: {fileID: 4449541017329074729}
+  - component: {fileID: 3705015949665275651}
   m_Layer: 6
   m_Name: Death Point (3)
   m_TagString: Untagged
@@ -566,8 +562,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2756917401886592680
-MeshCollider:
+--- !u!114 &4449541017329074729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150296005689287241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+--- !u!65 &3705015949665275651
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -584,23 +593,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &4449541017329074729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150296005689287241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!1 &1454450425176973911
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,8 +607,8 @@ GameObject:
   - component: {fileID: 2639634153610095467}
   - component: {fileID: 1431708020983017130}
   - component: {fileID: 2748472962845990469}
-  - component: {fileID: 7033360575166830282}
   - component: {fileID: 5108321762123110524}
+  - component: {fileID: 6433030565661194129}
   m_Layer: 6
   m_Name: Death Point (14)
   m_TagString: Untagged
@@ -686,8 +681,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7033360575166830282
-MeshCollider:
+--- !u!114 &5108321762123110524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454450425176973911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+--- !u!65 &6433030565661194129
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -704,23 +712,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &5108321762123110524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1454450425176973911}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: -0.0000076293945, y: 0.1, z: 0}
 --- !u!1 &1610233771380480520
 GameObject:
   m_ObjectHideFlags: 0
@@ -732,8 +726,8 @@ GameObject:
   - component: {fileID: 58720717068542519}
   - component: {fileID: 774744493701206409}
   - component: {fileID: 2802886113463830240}
-  - component: {fileID: 7726524211137886306}
   - component: {fileID: 4713393093406592192}
+  - component: {fileID: 7199576857630821458}
   m_Layer: 6
   m_Name: Death Point (12)
   m_TagString: Untagged
@@ -806,8 +800,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7726524211137886306
-MeshCollider:
+--- !u!114 &4713393093406592192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610233771380480520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+--- !u!65 &7199576857630821458
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -824,23 +831,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &4713393093406592192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1610233771380480520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: 0.0000038146973, y: 0.1, z: 0}
 --- !u!1 &1928854860073185809
 GameObject:
   m_ObjectHideFlags: 0
@@ -852,8 +845,8 @@ GameObject:
   - component: {fileID: 8074369897950905621}
   - component: {fileID: 5753786985629867799}
   - component: {fileID: 5786125551394100665}
-  - component: {fileID: 7459087284249704669}
   - component: {fileID: 4989386601560546414}
+  - component: {fileID: 3141963216488484141}
   m_Layer: 6
   m_Name: Death Point (20)
   m_TagString: Untagged
@@ -926,8 +919,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7459087284249704669
-MeshCollider:
+--- !u!114 &4989386601560546414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928854860073185809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+--- !u!65 &3141963216488484141
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -944,23 +950,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &4989386601560546414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1928854860073185809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: -0.000015258789, y: 0.1, z: 0}
 --- !u!1 &2137542396429814089
 GameObject:
   m_ObjectHideFlags: 0
@@ -972,8 +964,8 @@ GameObject:
   - component: {fileID: 325288711066908927}
   - component: {fileID: 3849061856448371128}
   - component: {fileID: 1820853448105405127}
-  - component: {fileID: 3728933918197193714}
   - component: {fileID: 8048611189612707352}
+  - component: {fileID: 6899455911800501944}
   m_Layer: 6
   m_Name: Death Point (1)
   m_TagString: Untagged
@@ -1046,8 +1038,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3728933918197193714
-MeshCollider:
+--- !u!114 &8048611189612707352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137542396429814089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+--- !u!65 &6899455911800501944
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1064,23 +1069,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &8048611189612707352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2137542396429814089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: -0.0000009536743, y: 0.1, z: 0}
 --- !u!1 &2435481756637470084
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,8 +1189,8 @@ GameObject:
   - component: {fileID: 4672719696036604511}
   - component: {fileID: 4360552060986217405}
   - component: {fileID: 999378707105430293}
-  - component: {fileID: 282963698185130368}
   - component: {fileID: 256006913701074073}
+  - component: {fileID: 2746392995802037861}
   m_Layer: 6
   m_Name: Death Point (24)
   m_TagString: Untagged
@@ -1272,8 +1263,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &282963698185130368
-MeshCollider:
+--- !u!114 &256006913701074073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2750990311721808982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+--- !u!65 &2746392995802037861
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1290,23 +1294,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &256006913701074073
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2750990311721808982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: -0.000015258789, y: 0.1, z: 0}
 --- !u!1 &3397689975199381612
 GameObject:
   m_ObjectHideFlags: 0
@@ -1489,8 +1479,8 @@ GameObject:
   - component: {fileID: 5196018552032603081}
   - component: {fileID: 279880940664968224}
   - component: {fileID: 1768273971787279220}
-  - component: {fileID: 1203014152604695837}
   - component: {fileID: 3483734120770080845}
+  - component: {fileID: 1266955265364134269}
   m_Layer: 6
   m_Name: Death Point (13)
   m_TagString: Untagged
@@ -1563,8 +1553,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1203014152604695837
-MeshCollider:
+--- !u!114 &3483734120770080845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4110176371367733303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+--- !u!65 &1266955265364134269
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1581,23 +1584,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &3483734120770080845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4110176371367733303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!1 &4537363815596552227
 GameObject:
   m_ObjectHideFlags: 0
@@ -1714,8 +1703,8 @@ GameObject:
   - component: {fileID: 2966653238419693584}
   - component: {fileID: 4205301044442257139}
   - component: {fileID: 1984857078964246462}
-  - component: {fileID: 1894538333269734887}
   - component: {fileID: 5635793118815933439}
+  - component: {fileID: 3688079433452329756}
   m_Layer: 6
   m_Name: Death Point
   m_TagString: Untagged
@@ -1788,8 +1777,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1894538333269734887
-MeshCollider:
+--- !u!114 &5635793118815933439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4778584966250691648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+--- !u!65 &3688079433452329756
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1806,23 +1808,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &5635793118815933439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4778584966250691648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: -0.0000009536743, y: 0.1, z: 0}
 --- !u!1 &4806289986603189304
 GameObject:
   m_ObjectHideFlags: 0
@@ -1834,8 +1822,8 @@ GameObject:
   - component: {fileID: 5447648276277089400}
   - component: {fileID: 5247511881238189222}
   - component: {fileID: 7439093347988447095}
-  - component: {fileID: 3899531121997886884}
   - component: {fileID: 1567292149262987023}
+  - component: {fileID: 629330588848897958}
   m_Layer: 6
   m_Name: Death Point (2)
   m_TagString: Untagged
@@ -1908,8 +1896,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3899531121997886884
-MeshCollider:
+--- !u!114 &1567292149262987023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4806289986603189304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+--- !u!65 &629330588848897958
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1926,23 +1927,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1567292149262987023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4806289986603189304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: -0.0000009536743, y: 0.1, z: 0}
 --- !u!1 &4873348765311814218
 GameObject:
   m_ObjectHideFlags: 0
@@ -1954,8 +1941,8 @@ GameObject:
   - component: {fileID: 240786281709697598}
   - component: {fileID: 4259902536662324858}
   - component: {fileID: 4317384561859732779}
-  - component: {fileID: 4216914687312692348}
   - component: {fileID: 691161035516992936}
+  - component: {fileID: 563588285782079977}
   m_Layer: 6
   m_Name: Death Point (15)
   m_TagString: Untagged
@@ -2028,8 +2015,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4216914687312692348
-MeshCollider:
+--- !u!114 &691161035516992936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4873348765311814218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+--- !u!65 &563588285782079977
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2046,23 +2046,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &691161035516992936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4873348765311814218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: -0.000015258789, y: 0.1, z: 0}
 --- !u!1 &5014602744091474507
 GameObject:
   m_ObjectHideFlags: 0
@@ -2074,8 +2060,8 @@ GameObject:
   - component: {fileID: 529300517965169805}
   - component: {fileID: 3909965912432533225}
   - component: {fileID: 5355329113449536607}
-  - component: {fileID: 6304625394943267188}
   - component: {fileID: 8507192095299105241}
+  - component: {fileID: 6455098641152121860}
   m_Layer: 6
   m_Name: Death Point (18)
   m_TagString: Untagged
@@ -2148,8 +2134,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6304625394943267188
-MeshCollider:
+--- !u!114 &8507192095299105241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5014602744091474507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+--- !u!65 &6455098641152121860
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2166,23 +2165,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &8507192095299105241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5014602744091474507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!1 &5319129709431719571
 GameObject:
   m_ObjectHideFlags: 0
@@ -2367,8 +2352,8 @@ GameObject:
   - component: {fileID: 292517932820340091}
   - component: {fileID: 353716639354364045}
   - component: {fileID: 3671069072935442751}
-  - component: {fileID: 7471306267950937543}
   - component: {fileID: 7854621940780724532}
+  - component: {fileID: 7247735894069213311}
   m_Layer: 6
   m_Name: Death Point (7)
   m_TagString: Untagged
@@ -2441,8 +2426,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7471306267950937543
-MeshCollider:
+--- !u!114 &7854621940780724532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5335437851238332544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+--- !u!65 &7247735894069213311
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2459,23 +2457,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &7854621940780724532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5335437851238332544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!1 &5822694707753706171
 GameObject:
   m_ObjectHideFlags: 0
@@ -2487,8 +2471,8 @@ GameObject:
   - component: {fileID: 5984739634127572106}
   - component: {fileID: 4603685316908195610}
   - component: {fileID: 2329766598703690428}
-  - component: {fileID: 2204079743801179230}
   - component: {fileID: 7946435502252486618}
+  - component: {fileID: 3774715159230976628}
   m_Layer: 6
   m_Name: Death Point (22)
   m_TagString: Untagged
@@ -2561,8 +2545,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2204079743801179230
-MeshCollider:
+--- !u!114 &7946435502252486618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5822694707753706171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+--- !u!65 &3774715159230976628
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2579,23 +2576,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &7946435502252486618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5822694707753706171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!1 &5900106604615994225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2607,8 +2590,8 @@ GameObject:
   - component: {fileID: 8232691060475302742}
   - component: {fileID: 5155512931453001009}
   - component: {fileID: 4874698842242245444}
-  - component: {fileID: 2994063286349337959}
   - component: {fileID: 7634928333920152039}
+  - component: {fileID: 5951374488805181106}
   m_Layer: 6
   m_Name: Death Point (19)
   m_TagString: Untagged
@@ -2681,8 +2664,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2994063286349337959
-MeshCollider:
+--- !u!114 &7634928333920152039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5900106604615994225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+--- !u!65 &5951374488805181106
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2699,23 +2695,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &7634928333920152039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5900106604615994225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: -0.000015258789, y: 0.1, z: 0}
 --- !u!1 &5963155392918374031
 GameObject:
   m_ObjectHideFlags: 0
@@ -2727,8 +2709,8 @@ GameObject:
   - component: {fileID: 4606561353248232163}
   - component: {fileID: 3561816591987493709}
   - component: {fileID: 7017877683787146263}
-  - component: {fileID: 8251495823962424581}
   - component: {fileID: 671949046691644856}
+  - component: {fileID: 2113588460612832366}
   m_Layer: 6
   m_Name: Death Point (8)
   m_TagString: Untagged
@@ -2801,8 +2783,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8251495823962424581
-MeshCollider:
+--- !u!114 &671949046691644856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5963155392918374031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+--- !u!65 &2113588460612832366
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2819,23 +2814,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &671949046691644856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5963155392918374031}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!1 &6003600089748984077
 GameObject:
   m_ObjectHideFlags: 0
@@ -2847,8 +2828,8 @@ GameObject:
   - component: {fileID: 5987650092224260148}
   - component: {fileID: 2973975392722642752}
   - component: {fileID: 8481417054455201877}
-  - component: {fileID: 7388543938544131174}
   - component: {fileID: 3888534212874656512}
+  - component: {fileID: 1783424829868846801}
   m_Layer: 6
   m_Name: Death Point (4)
   m_TagString: Untagged
@@ -2921,8 +2902,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7388543938544131174
-MeshCollider:
+--- !u!114 &3888534212874656512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6003600089748984077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+--- !u!65 &1783424829868846801
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2939,23 +2933,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &3888534212874656512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6003600089748984077}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!1 &6023057016194131667
 GameObject:
   m_ObjectHideFlags: 0
@@ -2967,8 +2947,8 @@ GameObject:
   - component: {fileID: 1530500488470481052}
   - component: {fileID: 3873075527721590710}
   - component: {fileID: 8370244637035605911}
-  - component: {fileID: 3114376044224819580}
   - component: {fileID: 5313415091096475880}
+  - component: {fileID: 7898500877986637918}
   m_Layer: 6
   m_Name: First Goal Point (4)
   m_TagString: Untagged
@@ -3041,8 +3021,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3114376044224819580
-MeshCollider:
+--- !u!114 &5313415091096475880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6023057016194131667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e9312832125746b08a442523d995bd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggeredMaterial: {fileID: 2100000, guid: a3bc09ff79e294fd5bb22df8e30c0937, type: 2}
+  levelManager: {fileID: 0}
+--- !u!65 &7898500877986637918
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3059,24 +3053,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &5313415091096475880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6023057016194131667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e9312832125746b08a442523d995bd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggeredMaterial: {fileID: 2100000, guid: a3bc09ff79e294fd5bb22df8e30c0937, type: 2}
-  levelManager: {fileID: 0}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: -0.000015258789, y: 0.1, z: 0}
 --- !u!1 &6122183767080604144
 GameObject:
   m_ObjectHideFlags: 0
@@ -3088,8 +3067,8 @@ GameObject:
   - component: {fileID: 9202308598701908736}
   - component: {fileID: 5033820498964692808}
   - component: {fileID: 1831344520827269229}
-  - component: {fileID: 1247316221403173600}
   - component: {fileID: 7134329148942576026}
+  - component: {fileID: 7934773080230718532}
   m_Layer: 6
   m_Name: Death Point (5)
   m_TagString: Untagged
@@ -3162,8 +3141,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1247316221403173600
-MeshCollider:
+--- !u!114 &7134329148942576026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6122183767080604144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+--- !u!65 &7934773080230718532
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3180,23 +3172,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &7134329148942576026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6122183767080604144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!1 &6399642532936988968
 GameObject:
   m_ObjectHideFlags: 0
@@ -3379,8 +3357,8 @@ GameObject:
   - component: {fileID: 3631732064748733032}
   - component: {fileID: 5940068815645726545}
   - component: {fileID: 3969991709222721317}
-  - component: {fileID: 6726261435579622662}
   - component: {fileID: 1746374044505997229}
+  - component: {fileID: 8613245462599919451}
   m_Layer: 6
   m_Name: Death Point (23)
   m_TagString: Untagged
@@ -3453,8 +3431,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6726261435579622662
-MeshCollider:
+--- !u!114 &1746374044505997229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6401757257370666221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+--- !u!65 &8613245462599919451
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3471,23 +3462,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1746374044505997229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6401757257370666221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: -0.000015258789, y: 0.1, z: 0}
 --- !u!1 &6514220054781702207
 GameObject:
   m_ObjectHideFlags: 0
@@ -3499,8 +3476,8 @@ GameObject:
   - component: {fileID: 4872459782537560986}
   - component: {fileID: 4271173873293255069}
   - component: {fileID: 2530586590798376818}
-  - component: {fileID: 5204035945537662349}
   - component: {fileID: 2086505430629134769}
+  - component: {fileID: 4556789366037752532}
   m_Layer: 6
   m_Name: First Goal Point (2)
   m_TagString: Untagged
@@ -3573,8 +3550,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5204035945537662349
-MeshCollider:
+--- !u!114 &2086505430629134769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6514220054781702207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e9312832125746b08a442523d995bd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggeredMaterial: {fileID: 2100000, guid: a3bc09ff79e294fd5bb22df8e30c0937, type: 2}
+  levelManager: {fileID: 0}
+--- !u!65 &4556789366037752532
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3591,24 +3582,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2086505430629134769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6514220054781702207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e9312832125746b08a442523d995bd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggeredMaterial: {fileID: 2100000, guid: a3bc09ff79e294fd5bb22df8e30c0937, type: 2}
-  levelManager: {fileID: 0}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!1 &6586868355059787011
 GameObject:
   m_ObjectHideFlags: 0
@@ -3725,8 +3701,8 @@ GameObject:
   - component: {fileID: 5665308020483840667}
   - component: {fileID: 5378546561659499676}
   - component: {fileID: 7532827798609309168}
-  - component: {fileID: 827200561655505760}
   - component: {fileID: 1478167820898966144}
+  - component: {fileID: 7194569828137013935}
   m_Layer: 6
   m_Name: Death Point (6)
   m_TagString: Untagged
@@ -3799,8 +3775,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &827200561655505760
-MeshCollider:
+--- !u!114 &1478167820898966144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6615553328196771838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+--- !u!65 &7194569828137013935
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3817,23 +3806,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1478167820898966144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6615553328196771838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!1 &6717061389231831195
 GameObject:
   m_ObjectHideFlags: 0
@@ -3845,8 +3820,8 @@ GameObject:
   - component: {fileID: 6467859592822569845}
   - component: {fileID: 7801337476012500330}
   - component: {fileID: 3171290066790721637}
-  - component: {fileID: 405639005343918829}
   - component: {fileID: 997254072973356692}
+  - component: {fileID: 1322134625553094301}
   m_Layer: 6
   m_Name: Death Point (11)
   m_TagString: Untagged
@@ -3919,8 +3894,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &405639005343918829
-MeshCollider:
+--- !u!114 &997254072973356692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6717061389231831195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+--- !u!65 &1322134625553094301
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3937,23 +3925,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &997254072973356692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6717061389231831195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!1 &6798926051855762540
 GameObject:
   m_ObjectHideFlags: 0
@@ -3965,8 +3939,8 @@ GameObject:
   - component: {fileID: 2425605281320587271}
   - component: {fileID: 7900699756955149613}
   - component: {fileID: 5821334672896264188}
-  - component: {fileID: 1886789568786767288}
   - component: {fileID: 2445404867805133667}
+  - component: {fileID: 3035968442604866154}
   m_Layer: 6
   m_Name: Death Point (17)
   m_TagString: Untagged
@@ -4039,8 +4013,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1886789568786767288
-MeshCollider:
+--- !u!114 &2445404867805133667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6798926051855762540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+--- !u!65 &3035968442604866154
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4057,23 +4044,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2445404867805133667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6798926051855762540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: -0.000015258789, y: 0.1, z: 0}
 --- !u!1 &7575154454333625291
 GameObject:
   m_ObjectHideFlags: 0
@@ -4190,8 +4163,8 @@ GameObject:
   - component: {fileID: 5418276348509531807}
   - component: {fileID: 6800354287799511998}
   - component: {fileID: 2360790421702102960}
-  - component: {fileID: 5332001279786653107}
   - component: {fileID: 6221096299587324970}
+  - component: {fileID: 8746779397320005335}
   m_Layer: 6
   m_Name: Death Point (9)
   m_TagString: Untagged
@@ -4264,8 +4237,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5332001279786653107
-MeshCollider:
+--- !u!114 &6221096299587324970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7692279143974504492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+--- !u!65 &8746779397320005335
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4282,23 +4268,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &6221096299587324970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7692279143974504492}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!1 &7904033522717342453
 GameObject:
   m_ObjectHideFlags: 0
@@ -4415,8 +4387,8 @@ GameObject:
   - component: {fileID: 5887139044673124105}
   - component: {fileID: 2445944702588722040}
   - component: {fileID: 4141853179221033756}
-  - component: {fileID: 1151389400001348435}
   - component: {fileID: 8512382772776886515}
+  - component: {fileID: 2321557882852127278}
   m_Layer: 6
   m_Name: First Goal Point
   m_TagString: Untagged
@@ -4489,8 +4461,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1151389400001348435
-MeshCollider:
+--- !u!114 &8512382772776886515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8424832545430774901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e9312832125746b08a442523d995bd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggeredMaterial: {fileID: 2100000, guid: a3bc09ff79e294fd5bb22df8e30c0937, type: 2}
+  levelManager: {fileID: 0}
+--- !u!65 &2321557882852127278
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4507,24 +4493,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &8512382772776886515
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8424832545430774901}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e9312832125746b08a442523d995bd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggeredMaterial: {fileID: 2100000, guid: a3bc09ff79e294fd5bb22df8e30c0937, type: 2}
-  levelManager: {fileID: 0}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!1 &8505674643310619302
 GameObject:
   m_ObjectHideFlags: 0
@@ -4536,8 +4507,8 @@ GameObject:
   - component: {fileID: 933999648912104490}
   - component: {fileID: 5351148863798463742}
   - component: {fileID: 281338055705710754}
-  - component: {fileID: 5403903273857758840}
   - component: {fileID: 4692476589923625049}
+  - component: {fileID: 4851679281823667873}
   m_Layer: 6
   m_Name: Death Point (10)
   m_TagString: Untagged
@@ -4610,8 +4581,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5403903273857758840
-MeshCollider:
+--- !u!114 &4692476589923625049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8505674643310619302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+--- !u!65 &4851679281823667873
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4628,23 +4612,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &4692476589923625049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8505674643310619302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01bbe8e3622b4cf7a4645589007e9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPosition: {x: 0.32, y: 1, z: -2.49}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!1 &8694210132722869834
 GameObject:
   m_ObjectHideFlags: 0
@@ -4727,8 +4697,8 @@ GameObject:
   - component: {fileID: 3882802387598763264}
   - component: {fileID: 3867503875862263056}
   - component: {fileID: 7355093703319652326}
-  - component: {fileID: 4683278855045790644}
   - component: {fileID: 5272864781495660512}
+  - component: {fileID: 465755954655737709}
   m_Layer: 6
   m_Name: First Goal Point (3)
   m_TagString: Untagged
@@ -4801,8 +4771,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4683278855045790644
-MeshCollider:
+--- !u!114 &5272864781495660512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9042002536261791698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e9312832125746b08a442523d995bd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggeredMaterial: {fileID: 2100000, guid: a3bc09ff79e294fd5bb22df8e30c0937, type: 2}
+  levelManager: {fileID: 0}
+--- !u!65 &465755954655737709
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4819,24 +4803,9 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &5272864781495660512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9042002536261791698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e9312832125746b08a442523d995bd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggeredMaterial: {fileID: 2100000, guid: a3bc09ff79e294fd5bb22df8e30c0937, type: 2}
-  levelManager: {fileID: 0}
+  serializedVersion: 3
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: -0.000015258789, y: 0.1, z: 0}
 --- !u!1001 &1221618298741655494
 PrefabInstance:
   m_ObjectHideFlags: 0
