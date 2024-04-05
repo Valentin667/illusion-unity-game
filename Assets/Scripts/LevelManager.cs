@@ -12,6 +12,8 @@ public class LevelManager : MonoBehaviour
     private GameObject m_CurrentLevelInstance; // Current level instance
     private bool isTransitioning = false; // Indicates whether a level transition is in progress
 
+    public GameObject endScreen;
+
     private void Start()
     {
         LoadLevel(0);
@@ -65,7 +67,7 @@ public class LevelManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Bravo, vous avez terminé le jeu");
+            endScreen.SetActive(true);
         }
     }
 
