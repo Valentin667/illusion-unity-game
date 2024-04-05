@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    public GameObject[] levelPrefabs; // Tableau des prefabs des différents niveaux
-    public float fadeDuration = 1f; // Durée de la transition de fondu
-    public float goalPointsForLevel1 = 1; // Nombre de GoalPoint pour le niveau 1
+    public GameObject[] levelPrefabs; // Table of prefabs for different levels
+    public float fadeDuration = 1f; // Fade transition time
+    public float goalPointsForLevel1 = 1; // Number of GoalPoint for level 1
 
-    private int currentLevelIndex = 0; // Index du niveau actuel
-    private GameObject currentLevelInstance; // Instance du niveau actuel
-    private bool isTransitioning = false; // Indique si une transition de niveau est en cours
+    private int m_CurrentLevelIndex = 0; // Current level index
+    private GameObject m_CurrentLevelInstance; // Current level instance
+    private bool isTransitioning = false; // Indicates whether a level transition is in progress
 
     private void Start()
     {
@@ -19,8 +19,8 @@ public class LevelManager : MonoBehaviour
 
     private void Update()
     {
-        // Vérifie si le score est suffisant pour passer au niveau suivant
-        if (!isTransitioning && ScoreManager.Instance.Score >= goalPointsForLevel1 * (currentLevelIndex + 1))
+        // Checks if the score is sufficient to move on to the next level
+        if (!isTransitioning && ScoreManager.Instance.Score >= goalPointsForLevel1 * (m_CurrentLevelIndex + 1))
         {
             LoadNextLevel();
         }
@@ -28,10 +28,10 @@ public class LevelManager : MonoBehaviour
 
     private void LoadLevel(int levelIndex)
     {
-        // Détruire le niveau actuel s'il existe déjà
-        if (currentLevelInstance != null)
+        // Delete the current level if it already exists
+        if (m_CurrentLevelInstance != null)
         {
-            Destroy(currentLevelInstance);
+            Destroy(m_CurrentLevelInstance);
         }
 
         ScoreManager.Instance.ResetScore();
@@ -40,8 +40,8 @@ public class LevelManager : MonoBehaviour
 
         Quaternion rotation = Quaternion.Euler(0f, 180f, 0f);
 
-        // Instancier le nouveau niveau
-        currentLevelInstance = Instantiate(levelPrefabs[levelIndex], Vector3.zero, rotation);
+        // Set new level
+        m_CurrentLevelInstance = Instantiate(levelPrefabs[levelIndex], Vector3.zero, rotation);
 
         TeleportPlayerToInitialPosition();
     }
@@ -54,18 +54,14 @@ public class LevelManager : MonoBehaviour
     {
         player.transform.position = new Vector3(0.32f, 1f, -2.49f);
     }
-    else
-    {
-        Debug.LogWarning("Player not found. Make sure your player GameObject is tagged with 'Player'.");
-    }
 }
 
     public void LoadNextLevel()
     {
-        if (currentLevelIndex < levelPrefabs.Length - 1)
+        if (m_CurrentLevelIndex < levelPrefabs.Length - 1)
         {
             StartCoroutine(TransitionToNextLevel());
-            currentLevelIndex++;
+            m_CurrentLevelIndex++;
         }
         else
         {
@@ -77,11 +73,10 @@ public class LevelManager : MonoBehaviour
     {
         isTransitioning = true;
 
-        // Réduire l'opacité de la scène à zéro avec une transition de fondu
+        // Reduce scene opacity to zero with a fade transition
         yield return FadeScene();
 
-        // Charger le prochain niveau
-        LoadLevel(currentLevelIndex);
+        LoadLevel(m_CurrentLevelIndex);
 
         isTransitioning = false;
     }
@@ -94,14 +89,14 @@ public class LevelManager : MonoBehaviour
 
         while (elapsedTime < fadeDuration)
         {
-            // Mettre à jour la couleur de fond
+            // Update background color
             RenderSettings.fogColor = Color.Lerp(originalColor, targetColor, elapsedTime / fadeDuration);
 
             elapsedTime += Time.deltaTime;
             yield return null;
         }
 
-        // Assurez-vous que la couleur de fond est exactement la couleur cible
+        // Make sure the background color is exactly the target color
         RenderSettings.fogColor = targetColor;
     }
 }

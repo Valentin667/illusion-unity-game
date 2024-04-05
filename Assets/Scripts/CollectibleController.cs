@@ -1,31 +1,16 @@
 using UnityEngine;
 
-public class CollectibleController_Final : MonoBehaviour
+public class CollectibleController : MonoBehaviour
 {
     private const string PLAYER_TAG = "Player";
 
     public float speedIncreaseAmount = 5.0f;
-    public float rotationSpeedX = 50.0f; // Vitesse de rotation autour de l'axe X
-    public float rotationSpeedY = 50.0f; // Vitesse de rotation autour de l'axe Y
-
-    // public AudioClip collectSound; // Le clip audio à jouer
-
-    // private AudioSource collectibleAudio;
-
-    // Audio
-    // [SerializeField] public AudioSource collectionSound;
-
-    // private void Start()
-    // {
-    //     // Attribuez le composant AudioSource
-    //     collectibleAudio = GetComponent<AudioSource>();
-    //     // Attribuez le clip audio au composant AudioSource
-    //     collectibleAudio.clip = collectSound;
-    // }
+    public float rotationSpeedX = 50.0f; // Speed of rotation about the X axis
+    public float rotationSpeedY = 50.0f; // Speed of rotation about the Y axis
 
     private void Update()
     {
-        // Faire tourner les objets autour des axes X et Y
+        // Rotate objects around the X and Y axes
         transform.Rotate(rotationSpeedX * Time.deltaTime, rotationSpeedY * Time.deltaTime, 0f);
     }
 

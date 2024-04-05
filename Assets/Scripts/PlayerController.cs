@@ -106,19 +106,19 @@ public class PlayerController : MonoBehaviour
 
     public void AdjustSpeed(float speedModifier)
     {
-        // Modifie la vitesse actuelle
+        // Change current speed
         m_CurrentSpeed += speedModifier;
 
-        // Permet de s'assurer que la vitesse ne devient pas négative
+        // Ensures that speed does not become negative
         m_CurrentSpeed = Mathf.Max(0f, m_CurrentSpeed);
     }
 
       public void AdjustJump(float jumpModifier)
     {
-        // Modifier la vitesse actuelle
+        // Change current speed
         m_CurrentJump += jumpModifier;
 
-        // Assurez-vous que la vitesse ne devient pas négative
+        // Make sure the speed does not go negative
         m_CurrentJump = Mathf.Max(0f, m_CurrentJump);
     }
 }
