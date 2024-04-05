@@ -2,10 +2,8 @@ using UnityEngine;
 
 public class Respawn : MonoBehaviour
 {
-    public float threshold;
+    [SerializeField] private float threshold = -10f; // Définition de la valeur par défaut et ajout de l'attribut [SerializeField]
     private CharacterController m_Character;
-
-    
 
     // Start is called before the first frame update
     void Start()
